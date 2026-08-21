@@ -24,9 +24,18 @@ topics:
     review_step: 0
     weakness:
       - 连续子数组含负数时仍会先尝试基于当前和缩放滑动窗口，需先判断单调性
+  - name: Sliding Window
+    status: Training
+    score: 55
+    level: C
+    last_training: "2026-08-20"
+    next_review: "2026-08-21"
+    review_step: 0
+    weakness:
+      - 能解释正数条件带来的窗口和单调性，但需在含负数和计数型变式中保持算法辨析稳定
 ---
 
 # State Notes
 
 Session 001 was backfilled from the 2026-08-20 “算法特训” conversation and archived later.
-LeetCode 209 had only a partial recoverable attempt, so it did not initialize or change a topic score.
+LeetCode 209 was corrected after the user supplied the complete result: independently AC in 17min with a sound monotonicity explanation.
