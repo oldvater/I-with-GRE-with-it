@@ -1,53 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-labelledby="title desc">
   <title id="title">Algorithm Training Ability Radar — 2026-W34</title>
-  <desc id="desc">Six-axis radar chart: Hash Set 53, Prefix Sum 56, Sliding Window 55, Binary Search 58, Monotonic Stack 48, Linked List 60.</desc>
+  <desc id="desc">Six-axis radar chart: Hash Set 51, Prefix Sum 56, Sliding Window 55, Binary Search 58, Monotonic Stack 44, Linked List 60.</desc>
   <rect width="700" height="700" fill="#f8fafc"/>
   <text x="350" y="36" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Ability Radar · 2026-W34</text>
-  <text x="350" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#64748b">Partial · Sessions 001–003 · scores 0–100</text>
-
+  <text x="350" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#64748b">Final · Sessions 001–004 · scores 0–100</text>
   <g fill="none" stroke="#cbd5e1" stroke-width="1.4">
     <polygon points="350,295 397.63,322.5 397.63,377.5 350,405 302.37,377.5 302.37,322.5"/>
     <polygon points="350,240 445.26,295 445.26,405 350,460 254.74,405 254.74,295"/>
     <polygon points="350,185 492.89,267.5 492.89,432.5 350,515 207.11,432.5 207.11,267.5"/>
     <polygon points="350,130 540.53,240 540.53,460 350,570 159.47,460 159.47,240"/>
   </g>
-
   <g stroke="#94a3b8" stroke-width="1.2">
-    <line x1="350" y1="350" x2="350" y2="130"/>
-    <line x1="350" y1="350" x2="540.53" y2="240"/>
-    <line x1="350" y1="350" x2="540.53" y2="460"/>
-    <line x1="350" y1="350" x2="350" y2="570"/>
-    <line x1="350" y1="350" x2="159.47" y2="460"/>
-    <line x1="350" y1="350" x2="159.47" y2="240"/>
+    <line x1="350" y1="350" x2="350" y2="130"/><line x1="350" y1="350" x2="540.53" y2="240"/>
+    <line x1="350" y1="350" x2="540.53" y2="460"/><line x1="350" y1="350" x2="350" y2="570"/>
+    <line x1="350" y1="350" x2="159.47" y2="460"/><line x1="350" y1="350" x2="159.47" y2="240"/>
   </g>
-
   <g font-family="Arial, sans-serif" font-size="11" fill="#64748b">
-    <text x="357" y="297">25</text>
-    <text x="357" y="242">50</text>
-    <text x="357" y="187">75</text>
-    <text x="357" y="132">100</text>
+    <text x="357" y="297">25</text><text x="357" y="242">50</text><text x="357" y="187">75</text><text x="357" y="132">100</text>
   </g>
-
-  <polygon points="350,233.4 456.69,288.4 454.79,410.5 350,477.6 258.55,402.8 235.68,284"
-           fill="#3b82f6" fill-opacity="0.28" stroke="#2563eb" stroke-width="3"/>
+  <polygon points="350,237.8 456.69,288.4 454.79,410.5 350,477.6 266.17,398.4 235.68,284" fill="#3b82f6" fill-opacity="0.28" stroke="#2563eb" stroke-width="3"/>
   <g fill="#1d4ed8" stroke="#ffffff" stroke-width="2">
-    <circle cx="350" cy="233.4" r="5"/>
-    <circle cx="456.69" cy="288.4" r="5"/>
-    <circle cx="454.79" cy="410.5" r="5"/>
-    <circle cx="350" cy="477.6" r="5"/>
-    <circle cx="258.55" cy="402.8" r="5"/>
-    <circle cx="235.68" cy="284" r="5"/>
+    <circle cx="350" cy="237.8" r="5"/><circle cx="456.69" cy="288.4" r="5"/><circle cx="454.79" cy="410.5" r="5"/>
+    <circle cx="350" cy="477.6" r="5"/><circle cx="266.17" cy="398.4" r="5"/><circle cx="235.68" cy="284" r="5"/>
   </g>
-
   <g font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#0f172a">
-    <text x="350" y="96" text-anchor="middle">Hash Set · 53</text>
-    <text x="520" y="220" text-anchor="start">Prefix Sum · 56</text>
-    <text x="520" y="486" text-anchor="start">Sliding Window · 55</text>
-    <text x="350" y="620" text-anchor="middle">Binary Search · 58</text>
-    <text x="180" y="486" text-anchor="end">Monotonic Stack · 48</text>
-    <text x="180" y="220" text-anchor="end">Linked List · 60</text>
+    <text x="350" y="96" text-anchor="middle">Hash Set · 51</text><text x="520" y="220">Prefix Sum · 56</text>
+    <text x="520" y="486">Sliding Window · 55</text><text x="350" y="620" text-anchor="middle">Binary Search · 58</text>
+    <text x="180" y="486" text-anchor="end">Monotonic Stack · 44</text><text x="180" y="220" text-anchor="end">Linked List · 60</text>
   </g>
-
   <g font-family="Arial, sans-serif" font-size="12" fill="#475569">
     <rect x="238" y="650" width="14" height="14" rx="2" fill="#3b82f6" fill-opacity="0.32" stroke="#2563eb"/>
     <text x="260" y="662">Current ability score</text>

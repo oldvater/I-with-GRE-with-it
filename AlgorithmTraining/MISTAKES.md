@@ -28,3 +28,19 @@ Last Seen: 2026-08-22
 
 使用总和差前先验证数组是否恰由 `1..n` 各一次再加一个额外副本组成；若只保证值域和唯一重复值，应利用“数组值可作为下一索引、重复值造成路径汇合”的结构推理。
 
+## 复杂度结论未逐层对应实际操作成本
+
+Status: Active
+First Seen: 2026-08-21
+Last Seen: 2026-08-23
+
+### Occurrences
+
+- Session 002 — LeetCode 875
+- Session 004 — LeetCode 1475
+- Session 004 — LeetCode 128
+
+### Correction
+
+给出复杂度前逐层列出循环、判定函数和成员查询的实际成本；`set`/`dict` 成员查询平均 O(1)，`tuple`/`list` 成员查询为 O(n)，嵌套或重复调用的成本需要相乘而不是相加。
+
