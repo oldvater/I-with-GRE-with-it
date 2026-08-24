@@ -1,8 +1,8 @@
 ---
 schema_version: 1
-current_session: 4
+current_session: 5
 current_stage: foundation
-last_update: "2026-08-23"
+last_update: "2026-08-24"
 timezone: "Asia/Shanghai"
 review_intervals_days: [1, 3, 7, 14, 30, 60]
 topics:
@@ -23,16 +23,16 @@ topics:
     next_review: "2026-08-24"
     review_step: 1
     weakness:
-      - 连续子数组含负数时仍会先尝试基于当前和缩放滑动窗口，需先判断单调性
+      - 已能识别负数会破坏滑动窗口单调性，但需进一步区分等值计数与不等式最优化，避免把含负数问题统一归为前缀和加哈希
   - name: Sliding Window
-    status: Training
-    score: 55
+    status: Review
+    score: 58
     level: C
-    last_training: "2026-08-20"
-    next_review: "2026-08-21"
-    review_step: 0
+    last_training: "2026-08-24"
+    next_review: "2026-08-27"
+    review_step: 1
     weakness:
-      - 能解释正数条件带来的窗口和单调性，但需在含负数和计数型变式中保持算法辨析稳定
+      - 能独立利用全正数条件证明窗口边界单调性，但需保持边界长度公式准确，并区分含负数时不同目标关系所需的方法
   - name: Binary Search
     status: Review
     score: 58
@@ -44,18 +44,18 @@ topics:
       - 已能独立确定答案变量、判定函数和单调方向，但需用逐项非增关系严谨证明，避免错误的定值乘积论证
   - name: Monotonic Stack
     status: Training
-    score: 44
-    level: D
-    last_training: "2026-08-23"
-    next_review: "2026-08-24"
+    score: 54
+    level: C
+    last_training: "2026-08-24"
+    next_review: "2026-08-25"
     review_step: 0
     weakness:
-      - 能在明确线性化方向后快速迁移到严格更大与小于等于变式，但无提示时仍先采用逐项后扫，需独立识别待决元素结构并核对目标复杂度
+      - 已能无提示识别在线跨度的待决状态，并正确排除只求全局最优的假阳性题型；仍需用后续样本确认稳定性并主动写出维护不变量与均摊复杂度
     difficulty:
       recommended: 1
-      confidence: low
-      comparable_samples: 2
-      recent_indices: [0.56, 0.56]
+      confidence: medium
+      comparable_samples: 4
+      recent_indices: [0.56, 1.00, 1.00]
       last_adjustment: "session004: initialized at 1"
   - name: Linked List
     status: Training
@@ -75,4 +75,5 @@ LeetCode 209 was corrected after the user supplied the complete result: independ
 Session 002 archived the 2026-08-21 Day 2 training: LeetCode 875, 739, and the due review of LeetCode 560.
 Session 003 completed the 2026-08-22 three-day diagnostic phase; regular adaptive training begins with the next session.
 Session 004 began regular adaptive training: LeetCode 496 and 1475 were optimized after a decisive linearization hint, while LeetCode 128 exposed a Python container-complexity confusion.
+Session 005 recorded independent S results on LeetCode 901 and the LeetCode 121 false-positive discrimination task; LeetCode 209 review was independently AC with one boundary typo and one overgeneralized negative-array rule.
 
