@@ -48,13 +48,28 @@ Last Seen: 2026-08-23
 
 Status: Active
 First Seen: 2026-08-24
-Last Seen: 2026-08-24
+Last Seen: 2026-08-25
 
 ### Occurrences
 
 - Session 005 — LeetCode 209
+- Session 006 — LeetCode 930
 
 ### Correction
 
-先区分目标是“和恰好等于某值”还是“和至少/至多某值并求最短或最长”；哈希适合精确差值查询和计数，不等式最优化还需要能维护顺序或极值的结构。
+先区分目标是“和恰好等于某值”的查询或计数，还是“和至少/至多某值并求最短或最长”的不等式最优化；哈希适合精确差值查询和计数，不能单独覆盖所有连续区间问题。
+
+## 未先固定前缀定义与区间边界就写求和等式
+
+Status: Active
+First Seen: 2026-08-25
+Last Seen: 2026-08-25
+
+### Occurrences
+
+- Session 006 — LeetCode 724
+
+### Correction
+
+写求和等式前先明确前缀和是否包含当前位置，以及题目左右区间是否包含中心元素，再逐项写出左右端点。
 
