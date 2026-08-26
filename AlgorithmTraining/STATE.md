@@ -1,20 +1,26 @@
 ---
 schema_version: 1
-current_session: 6
+current_session: 7
 current_stage: foundation
-last_update: "2026-08-25"
+last_update: "2026-08-26"
 timezone: "Asia/Shanghai"
 review_intervals_days: [1, 3, 7, 14, 30, 60]
 topics:
   - name: Hash Set
-    status: Training
-    score: 51
+    status: Review
+    score: 64
     level: C
-    last_training: "2026-08-23"
-    next_review: "2026-08-24"
-    review_step: 0
+    last_training: "2026-08-26"
+    next_review: "2026-08-29"
+    review_step: 1
     weakness:
-      - 能回忆连续序列的哈希起点，但需稳定区分哈希容器与顺序容器的成员查询成本，并独立完成完整复杂度证明
+      - 能独立区分存在性与次数状态并完成哈希建模；需在首次复杂度说明中严格区分平均 O(1) 查询与线性 O(n) 查询，并明确规模变量
+    difficulty:
+      recommended: 1
+      confidence: low
+      comparable_samples: 2
+      recent_indices: [1.00, 1.00]
+      last_adjustment: "session007: initialized at 1"
   - name: Prefix Sum
     status: Review
     score: 62
@@ -83,4 +89,4 @@ Session 003 completed the 2026-08-22 three-day diagnostic phase; regular adaptiv
 Session 004 began regular adaptive training: LeetCode 496 and 1475 were optimized after a decisive linearization hint, while LeetCode 128 exposed a Python container-complexity confusion.
 Session 005 recorded independent S results on LeetCode 901 and the LeetCode 121 false-positive discrimination task; LeetCode 209 review was independently AC with one boundary typo and one overgeneralized negative-array rule.
 Session 006 recorded independent A results on LeetCode 930 and 724 and an A review of LeetCode 143; exact-sum mechanics were fast, while applicability boundaries and proactive invariant explanations remain the next focus.
-
+Session 007 recorded S results on LeetCode 349 and 350 and an A review of LeetCode 128; Hash Set moved to Review, with complexity terminology retained as the remaining weakness.

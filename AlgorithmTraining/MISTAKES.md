@@ -32,17 +32,18 @@ Last Seen: 2026-08-22
 
 Status: Active
 First Seen: 2026-08-21
-Last Seen: 2026-08-23
+Last Seen: 2026-08-26
 
 ### Occurrences
 
 - Session 002 — LeetCode 875
 - Session 004 — LeetCode 1475
 - Session 004 — LeetCode 128
+- Session 007 — LeetCode 128
 
 ### Correction
 
-给出复杂度前逐层列出循环、判定函数和成员查询的实际成本；`set`/`dict` 成员查询平均 O(1)，`tuple`/`list` 成员查询为 O(n)，嵌套或重复调用的成本需要相乘而不是相加。
+给出复杂度前逐层列出循环、判定函数和成员查询的实际成本，并严格区分“常数级 O(1)”与“线性级 O(n)”；`set`/`dict` 成员查询平均 O(1)，`tuple`/`list` 成员查询为 O(n)，嵌套或重复调用的成本需要相乘而不是相加。
 
 ## 未区分目标关系就把含负数子数组统一归为前缀和加哈希
 
@@ -72,4 +73,3 @@ Last Seen: 2026-08-25
 ### Correction
 
 写求和等式前先明确前缀和是否包含当前位置，以及题目左右区间是否包含中心元素，再逐项写出左右端点。
-
