@@ -1,8 +1,8 @@
 ---
 schema_version: 1
-current_session: 7
+current_session: 8
 current_stage: foundation
-last_update: "2026-08-26"
+last_update: "2026-08-27"
 timezone: "Asia/Shanghai"
 review_intervals_days: [1, 3, 7, 14, 30, 60]
 topics:
@@ -23,18 +23,18 @@ topics:
       last_adjustment: "session007: initialized at 1"
   - name: Prefix Sum
     status: Review
-    score: 62
-    level: C
-    last_training: "2026-08-25"
-    next_review: "2026-08-26"
+    score: 70
+    level: B
+    last_training: "2026-08-27"
+    next_review: "2026-08-28"
     review_step: 0
     weakness:
-      - 能独立完成精确目标和计数与单位置平衡判断，但需继续先区分精确等式和不等式最优化，避免把前缀和加哈希泛化到所有连续区间问题
+      - 能独立固定半开前缀定义并完成区间查询，也能辨析中心元素是否排除；需在滚动优化中持续绑定累计量与当前下标，避免 i 与 i+1 的边界计算错误
     difficulty:
       recommended: 1
-      confidence: low
-      comparable_samples: 2
-      recent_indices: [0.93, 0.93]
+      confidence: medium
+      comparable_samples: 4
+      recent_indices: [0.93, 1.00, 0.93]
       last_adjustment: "session006: initialized at 1"
   - name: Sliding Window
     status: Review
@@ -55,14 +55,14 @@ topics:
     weakness:
       - 已能独立确定答案变量、判定函数和单调方向，但需用逐项非增关系严谨证明，避免错误的定值乘积论证
   - name: Monotonic Stack
-    status: Training
-    score: 54
+    status: Mastered
+    score: 59
     level: C
-    last_training: "2026-08-24"
-    next_review: "2026-08-25"
-    review_step: 0
+    last_training: "2026-08-27"
+    next_review: "2026-08-30"
+    review_step: 1
     weakness:
-      - 已能无提示识别在线跨度的待决状态，并正确排除只求全局最优的假阳性题型；仍需用后续样本确认稳定性并主动写出维护不变量与均摊复杂度
+      - 已能无提示识别待决状态、排除全局最优假阳性，并主动写出首次触发不变量与均摊复杂度；后续通过间隔复习保持稳定性
     difficulty:
       recommended: 1
       confidence: medium
@@ -90,3 +90,4 @@ Session 004 began regular adaptive training: LeetCode 496 and 1475 were optimize
 Session 005 recorded independent S results on LeetCode 901 and the LeetCode 121 false-positive discrimination task; LeetCode 209 review was independently AC with one boundary typo and one overgeneralized negative-array rule.
 Session 006 recorded independent A results on LeetCode 930 and 724 and an A review of LeetCode 143; exact-sum mechanics were fast, while applicability boundaries and proactive invariant explanations remain the next focus.
 Session 007 recorded S results on LeetCode 349 and 350 and an A review of LeetCode 128; Hash Set moved to Review, with complexity terminology retained as the remaining weakness.
+Session 008 recorded S/A results on LeetCode 303 and 2574 and an S review of LeetCode 739; Prefix Sum reached level B, while Monotonic Stack met the recent-five graduation rule and moved to Mastered.

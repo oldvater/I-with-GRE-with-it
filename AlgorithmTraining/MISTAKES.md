@@ -64,12 +64,13 @@ Last Seen: 2026-08-25
 
 Status: Active
 First Seen: 2026-08-25
-Last Seen: 2026-08-25
+Last Seen: 2026-08-27
 
 ### Occurrences
 
 - Session 006 — LeetCode 724
+- Session 008 — LeetCode 2574
 
 ### Correction
 
-写求和等式前先明确前缀和是否包含当前位置，以及题目左右区间是否包含中心元素，再逐项写出左右端点。
+写求和等式前先明确前缀和或滚动累计量是否包含当前位置，以及题目左右区间是否包含中心元素；若累计量 k 表示 i 左侧和，则当前右侧和必须写成 `total - k - nums[i]`，计算后才能把 `nums[i]` 加入 k。
