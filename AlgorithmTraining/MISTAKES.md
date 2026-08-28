@@ -32,7 +32,7 @@ Last Seen: 2026-08-22
 
 Status: Active
 First Seen: 2026-08-21
-Last Seen: 2026-08-26
+Last Seen: 2026-08-28
 
 ### Occurrences
 
@@ -40,10 +40,11 @@ Last Seen: 2026-08-26
 - Session 004 — LeetCode 1475
 - Session 004 — LeetCode 128
 - Session 007 — LeetCode 128
+- Session 009 — LeetCode 875
 
 ### Correction
 
-给出复杂度前逐层列出循环、判定函数和成员查询的实际成本，并严格区分“常数级 O(1)”与“线性级 O(n)”；`set`/`dict` 成员查询平均 O(1)，`tuple`/`list` 成员查询为 O(n)，嵌套或重复调用的成本需要相乘而不是相加。
+给出复杂度前逐层列出循环、判定函数和成员查询的实际成本，并严格区分“常数级 O(1)”与“线性级 O(n)”；`set`/`dict` 成员查询平均 O(1)，`tuple`/`list` 成员查询为 O(n)，嵌套或重复调用的成本需要相乘而不是相加，例如 O(n) 判定执行 O(log m) 次应为 O(n log m)。
 
 ## 未区分目标关系就把含负数子数组统一归为前缀和加哈希
 
@@ -74,3 +75,17 @@ Last Seen: 2026-08-27
 ### Correction
 
 写求和等式前先明确前缀和或滚动累计量是否包含当前位置，以及题目左右区间是否包含中心元素；若累计量 k 表示 i 左侧和，则当前右侧和必须写成 `total - k - nums[i]`，计算后才能把 `nums[i]` 加入 k。
+
+## 只证明二分区间会收敛，未证明收敛点满足答案定义
+
+Status: Active
+First Seen: 2026-08-28
+Last Seen: 2026-08-28
+
+### Occurrences
+
+- Session 009 — LeetCode 35
+
+### Correction
+
+写边界二分前先定义被排除区间各自满足的性质；例如维护 `[0, left)` 全部小于目标、`[right, n)` 全部大于等于目标，循环结束时再由 `left = right` 推出该点满足答案定义。边界移动只能证明终止，不能单独证明返回值正确。

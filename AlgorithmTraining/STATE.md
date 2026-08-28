@@ -1,8 +1,8 @@
 ---
 schema_version: 1
-current_session: 8
+current_session: 9
 current_stage: foundation
-last_update: "2026-08-27"
+last_update: "2026-08-28"
 timezone: "Asia/Shanghai"
 review_intervals_days: [1, 3, 7, 14, 30, 60]
 topics:
@@ -47,13 +47,19 @@ topics:
       - 能独立利用全正数条件证明窗口边界单调性，但需保持边界长度公式准确，并区分含负数时不同目标关系所需的方法
   - name: Binary Search
     status: Review
-    score: 58
-    level: C
-    last_training: "2026-08-22"
-    next_review: "2026-08-25"
-    review_step: 1
+    score: 69
+    level: B
+    last_training: "2026-08-28"
+    next_review: "2026-09-04"
+    review_step: 2
     weakness:
-      - 已能独立确定答案变量、判定函数和单调方向，但需用逐项非增关系严谨证明，避免错误的定值乘积论证
+      - 能独立完成精确查找、下界查找和答案二分，并已改正定值乘积论证；需用区间不变量证明收敛点满足答案定义，并把单次判定成本乘入总复杂度
+    difficulty:
+      recommended: 1
+      confidence: low
+      comparable_samples: 2
+      recent_indices: [1.00, 0.93]
+      last_adjustment: "session009: initialized at 1"
   - name: Monotonic Stack
     status: Mastered
     score: 59
@@ -91,3 +97,4 @@ Session 005 recorded independent S results on LeetCode 901 and the LeetCode 121 
 Session 006 recorded independent A results on LeetCode 930 and 724 and an A review of LeetCode 143; exact-sum mechanics were fast, while applicability boundaries and proactive invariant explanations remain the next focus.
 Session 007 recorded S results on LeetCode 349 and 350 and an A review of LeetCode 128; Hash Set moved to Review, with complexity terminology retained as the remaining weakness.
 Session 008 recorded S/A results on LeetCode 303 and 2574 and an S review of LeetCode 739; Prefix Sum reached level B, while Monotonic Stack met the recent-five graduation rule and moved to Mastered.
+Session 009 recorded S/A results on LeetCode 704 and 35 and an A review of LeetCode 875; Binary Search reached level B, while lower-bound invariants and nested-check complexity remain active weaknesses.
