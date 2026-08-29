@@ -1,8 +1,8 @@
 ---
 schema_version: 1
-current_session: 9
+current_session: 10
 current_stage: foundation
-last_update: "2026-08-28"
+last_update: "2026-08-29"
 timezone: "Asia/Shanghai"
 review_intervals_days: [1, 3, 7, 14, 30, 60]
 topics:
@@ -37,14 +37,20 @@ topics:
       recent_indices: [0.93, 1.00, 0.93]
       last_adjustment: "session006: initialized at 1"
   - name: Sliding Window
-    status: Review
-    score: 58
-    level: C
-    last_training: "2026-08-24"
-    next_review: "2026-08-27"
-    review_step: 1
+    status: Mastered
+    score: 71
+    level: B
+    last_training: "2026-08-29"
+    next_review: "2026-09-05"
+    review_step: 2
     weakness:
-      - 能独立利用全正数条件证明窗口边界单调性，但需保持边界长度公式准确，并区分含负数时不同目标关系所需的方法
+      - 能独立处理定长窗口、距离约束状态和全正数变长窗口，并正确证明均摊 O(n)；复习时需在首次解释中主动写出窗口成立所依赖的输入条件
+    difficulty:
+      recommended: 1
+      confidence: low
+      comparable_samples: 2
+      recent_indices: [1.00, 1.00]
+      last_adjustment: "session010: initialized at 1"
   - name: Binary Search
     status: Review
     score: 69
@@ -98,3 +104,4 @@ Session 006 recorded independent A results on LeetCode 930 and 724 and an A revi
 Session 007 recorded S results on LeetCode 349 and 350 and an A review of LeetCode 128; Hash Set moved to Review, with complexity terminology retained as the remaining weakness.
 Session 008 recorded S/A results on LeetCode 303 and 2574 and an S review of LeetCode 739; Prefix Sum reached level B, while Monotonic Stack met the recent-five graduation rule and moved to Mastered.
 Session 009 recorded S/A results on LeetCode 704 and 35 and an A review of LeetCode 875; Binary Search reached level B, while lower-bound invariants and nested-check complexity remain active weaknesses.
+Session 010, dated 2026-08-29 by explicit user instruction, recorded S results on LeetCode 643 and 219 and an A review of LeetCode 209; Sliding Window reached level B and moved to Mastered.
