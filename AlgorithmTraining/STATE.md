@@ -1,8 +1,8 @@
 ---
 schema_version: 1
-current_session: 10
+current_session: 11
 current_stage: foundation
-last_update: "2026-08-29"
+last_update: "2026-08-30"
 timezone: "Asia/Shanghai"
 review_intervals_days: [1, 3, 7, 14, 30, 60]
 topics:
@@ -83,13 +83,19 @@ topics:
       last_adjustment: "session004: initialized at 1"
   - name: Linked List
     status: Review
-    score: 63
-    level: C
-    last_training: "2026-08-25"
-    next_review: "2026-08-28"
-    review_step: 1
+    score: 74
+    level: B
+    last_training: "2026-08-30"
+    next_review: "2026-09-06"
+    review_step: 2
     weakness:
-      - 能独立完成找中点、反转和交叉合并，并在追问后准确说明保存后继的不变量；需在首次解释中主动写出断链、合并终止条件与额外空间
+      - 能独立使用 dummy 完成合并与删除，也能完成找中点、反转和交叉合并；需在首次解释中主动写出改指针前的后继保存、奇偶长度下的终止条件与额外空间，并避免用修改节点值模拟删除
+    difficulty:
+      recommended: 1
+      confidence: low
+      comparable_samples: 2
+      recent_indices: [1.00, 0.91]
+      last_adjustment: "session011: initialized at 1"
 ---
 
 # State Notes
@@ -105,3 +111,4 @@ Session 007 recorded S results on LeetCode 349 and 350 and an A review of LeetCo
 Session 008 recorded S/A results on LeetCode 303 and 2574 and an S review of LeetCode 739; Prefix Sum reached level B, while Monotonic Stack met the recent-five graduation rule and moved to Mastered.
 Session 009 recorded S/A results on LeetCode 704 and 35 and an A review of LeetCode 875; Binary Search reached level B, while lower-bound invariants and nested-check complexity remain active weaknesses.
 Session 010, dated 2026-08-29 by explicit user instruction, recorded S results on LeetCode 643 and 219 and an A review of LeetCode 209; Sliding Window reached level B and moved to Mastered.
+Session 011, dated 2026-08-30 by explicit user instruction, recorded an S result on LeetCode 21 and A results on LeetCode 203 and the LeetCode 143 review; Linked List reached level B but remains in Review because its recent five contain only two S ratings.
