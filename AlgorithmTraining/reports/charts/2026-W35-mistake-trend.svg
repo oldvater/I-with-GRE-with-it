@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="title desc">
+  <title id="title">Algorithm Training Mistake Trend — 2026-W35</title>
+  <desc id="desc">For ISO week W34 there were 3 new patterns, 0 recurrences or reinforcements, and 0 resolutions; for W35 the values were 4, 4, and 0.</desc>
+  <rect width="800" height="440" fill="#f8fafc"/>
+  <text x="400" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Mistake Trend · through 2026-W35</text>
+  <text x="400" y="57" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#64748b">Two available ISO weeks · session-level pattern events</text>
+  <g stroke="#cbd5e1" stroke-width="1">
+    <line x1="90" y1="330" x2="740" y2="330"/><line x1="90" y1="270" x2="740" y2="270"/>
+    <line x1="90" y1="210" x2="740" y2="210"/><line x1="90" y1="150" x2="740" y2="150"/><line x1="90" y1="90" x2="740" y2="90"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="end">
+    <text x="78" y="334">0</text><text x="78" y="274">1</text><text x="78" y="214">2</text><text x="78" y="154">3</text><text x="78" y="94">4</text>
+  </g>
+  <line x1="90" y1="90" x2="90" y2="330" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="90" y1="330" x2="740" y2="330" stroke="#64748b" stroke-width="1.5"/>
+  <g>
+    <rect x="190" y="150" width="42" height="180" rx="4" fill="#ef4444" fill-opacity="0.78"/>
+    <rect x="242" y="329" width="42" height="1" fill="#f59e0b"/><rect x="294" y="329" width="42" height="1" fill="#10b981"/>
+    <text x="211" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#b91c1c">3</text>
+    <text x="263" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#92400e">0</text>
+    <text x="315" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#047857">0</text>
+    <rect x="490" y="90" width="42" height="240" rx="4" fill="#ef4444" fill-opacity="0.78"/>
+    <rect x="542" y="90" width="42" height="240" rx="4" fill="#f59e0b" fill-opacity="0.82"/><rect x="594" y="329" width="42" height="1" fill="#10b981"/>
+    <text x="511" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#b91c1c">4</text>
+    <text x="563" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#92400e">4</text>
+    <text x="615" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#047857">0</text>
+  </g>
+  <g text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#334155">
+    <text x="263" y="358">2026-W34</text><text x="563" y="358">2026-W35</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="12" fill="#475569">
+    <rect x="155" y="398" width="13" height="13" rx="2" fill="#ef4444" fill-opacity="0.78"/><text x="175" y="409">New</text>
+    <rect x="295" y="398" width="13" height="13" rx="2" fill="#f59e0b"/><text x="315" y="409">Recurrences / reinforcements</text>
+    <rect x="555" y="398" width="13" height="13" rx="2" fill="#10b981"/><text x="575" y="409">Resolutions</text>
+  </g>
+</svg>

@@ -63,7 +63,7 @@ Last Seen: 2026-08-25
 
 ## 未先固定前缀定义与区间边界就写求和等式
 
-Status: Active
+Status: Resolved
 First Seen: 2026-08-25
 Last Seen: 2026-08-27
 

@@ -1,8 +1,8 @@
 ---
 schema_version: 1
-current_session: 11
+current_session: 12
 current_stage: foundation
-last_update: "2026-08-30"
+last_update: "2026-08-31"
 timezone: "Asia/Shanghai"
 review_intervals_days: [1, 3, 7, 14, 30, 60]
 topics:
@@ -23,19 +23,19 @@ topics:
       last_adjustment: "session007: initialized at 1"
   - name: Prefix Sum
     status: Review
-    score: 70
-    level: B
-    last_training: "2026-08-27"
-    next_review: "2026-08-28"
-    review_step: 0
+    score: 81
+    level: A
+    last_training: "2026-08-31"
+    next_review: "2026-09-03"
+    review_step: 1
     weakness:
-      - 能独立固定半开前缀定义并完成区间查询，也能辨析中心元素是否排除；需在滚动优化中持续绑定累计量与当前下标，避免 i 与 i+1 的边界计算错误
+      - 能独立处理半开前缀、初始状态、最小前缀与中心排除，并已在复习中纠正 i/i+1 边界混淆；需在首次报告中主动写出状态不变量和额外空间
     difficulty:
-      recommended: 1
+      recommended: 2
       confidence: medium
-      comparable_samples: 4
-      recent_indices: [0.93, 1.00, 0.93]
-      last_adjustment: "session006: initialized at 1"
+      comparable_samples: 6
+      recent_indices: [0.93, 0.93, 1.00]
+      last_adjustment: "session012: 1 -> 2"
   - name: Sliding Window
     status: Mastered
     score: 71
@@ -112,3 +112,4 @@ Session 008 recorded S/A results on LeetCode 303 and 2574 and an S review of Lee
 Session 009 recorded S/A results on LeetCode 704 and 35 and an A review of LeetCode 875; Binary Search reached level B, while lower-bound invariants and nested-check complexity remain active weaknesses.
 Session 010, dated 2026-08-29 by explicit user instruction, recorded S results on LeetCode 643 and 219 and an A review of LeetCode 209; Sliding Window reached level B and moved to Mastered.
 Session 011, dated 2026-08-30 by explicit user instruction, recorded an S result on LeetCode 21 and A results on LeetCode 203 and the LeetCode 143 review; Linked List reached level B but remains in Review because its recent five contain only two S ratings.
+Session 012 recorded an A result on LeetCode 1732, an S result on LeetCode 1413, and an A review of LeetCode 2574; Prefix Sum reached level A, its recommended task difficulty advanced to 2, and its prefix-boundary mistake pattern was resolved.
