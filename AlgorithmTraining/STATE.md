@@ -1,25 +1,25 @@
 ---
 schema_version: 1
-current_session: 12
+current_session: 13
 current_stage: foundation
-last_update: "2026-08-31"
+last_update: "2026-09-02"
 timezone: "Asia/Shanghai"
 review_intervals_days: [1, 3, 7, 14, 30, 60]
 topics:
   - name: Hash Set
     status: Review
-    score: 64
-    level: C
-    last_training: "2026-08-26"
-    next_review: "2026-08-29"
-    review_step: 1
+    score: 69
+    level: B
+    last_training: "2026-09-02"
+    next_review: "2026-09-03"
+    review_step: 0
     weakness:
-      - 能独立区分存在性与次数状态并完成哈希建模；需在首次复杂度说明中严格区分平均 O(1) 查询与线性 O(n) 查询，并明确规模变量
+      - 能独立区分数值存在性、频次状态与频次唯一性；需在复杂度证明中先确认外层遍历域是否去重，并把每次内层扩展绑定到唯一触发者，避免重复工作被漏算
     difficulty:
       recommended: 1
-      confidence: low
-      comparable_samples: 2
-      recent_indices: [1.00, 1.00]
+      confidence: medium
+      comparable_samples: 4
+      recent_indices: [1.00, 1.00, 1.00]
       last_adjustment: "session007: initialized at 1"
   - name: Prefix Sum
     status: Review
@@ -113,3 +113,4 @@ Session 009 recorded S/A results on LeetCode 704 and 35 and an A review of LeetC
 Session 010, dated 2026-08-29 by explicit user instruction, recorded S results on LeetCode 643 and 219 and an A review of LeetCode 209; Sliding Window reached level B and moved to Mastered.
 Session 011, dated 2026-08-30 by explicit user instruction, recorded an S result on LeetCode 21 and A results on LeetCode 203 and the LeetCode 143 review; Linked List reached level B but remains in Review because its recent five contain only two S ratings.
 Session 012 recorded an A result on LeetCode 1732, an S result on LeetCode 1413, and an A review of LeetCode 2574; Prefix Sum reached level A, its recommended task difficulty advanced to 2, and its prefix-boundary mistake pattern was resolved.
+Session 013 recorded S results on LeetCode 217 and 1207 and a D review of LeetCode 128; Hash Set reached level B, but its recommended difficulty remained at 1 because the core complexity-accounting mistake recurred and review required the historical solution.

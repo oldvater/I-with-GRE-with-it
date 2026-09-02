@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-labelledby="title desc">
+  <title id="title">Algorithm Training Ability Radar — 2026-08</title>
+  <desc id="desc">Six-axis radar chart: Hash Set 64, Prefix Sum 81, Binary Search 69, Linked List 74, Sliding Window 71, Monotonic Stack 59.</desc>
+  <rect width="700" height="700" fill="#f8fafc"/>
+  <text x="350" y="36" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Ability Radar · 2026-08</text>
+  <text x="350" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#64748b">Final · Sessions 001–012 · scores 0–100</text>
+  <g fill="none" stroke="#cbd5e1" stroke-width="1.4">
+    <polygon points="350,295 397.63,322.5 397.63,377.5 350,405 302.37,377.5 302.37,322.5"/>
+    <polygon points="350,240 445.26,295 445.26,405 350,460 254.74,405 254.74,295"/>
+    <polygon points="350,185 492.89,267.5 492.89,432.5 350,515 207.11,432.5 207.11,267.5"/>
+    <polygon points="350,130 540.53,240 540.53,460 350,570 159.47,460 159.47,240"/>
+  </g>
+  <g stroke="#94a3b8" stroke-width="1.2">
+    <line x1="350" y1="350" x2="350" y2="130"/><line x1="350" y1="350" x2="540.53" y2="240"/>
+    <line x1="350" y1="350" x2="540.53" y2="460"/><line x1="350" y1="350" x2="350" y2="570"/>
+    <line x1="350" y1="350" x2="159.47" y2="460"/><line x1="350" y1="350" x2="159.47" y2="240"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <text x="357" y="297">25</text><text x="357" y="242">50</text><text x="357" y="187">75</text><text x="357" y="132">100</text>
+  </g>
+  <polygon points="350,209.2 504.33,260.9 481.46,425.9 350,512.8 214.72,428.1 237.59,285.1" fill="#8b5cf6" fill-opacity="0.27" stroke="#7c3aed" stroke-width="3"/>
+  <g fill="#6d28d9" stroke="#ffffff" stroke-width="2">
+    <circle cx="350" cy="209.2" r="5"/><circle cx="504.33" cy="260.9" r="5"/><circle cx="481.46" cy="425.9" r="5"/>
+    <circle cx="350" cy="512.8" r="5"/><circle cx="214.72" cy="428.1" r="5"/><circle cx="237.59" cy="285.1" r="5"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="15" font-weight="600" fill="#0f172a">
+    <text x="350" y="96" text-anchor="middle">Hash Set · 64</text><text x="520" y="220">Prefix Sum · 81</text>
+    <text x="520" y="486">Binary Search · 69</text><text x="350" y="620" text-anchor="middle">Linked List · 74</text>
+    <text x="180" y="486" text-anchor="end">Sliding Window · 71</text><text x="180" y="220" text-anchor="end">Monotonic Stack · 59</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="12" fill="#475569">
+    <rect x="238" y="650" width="14" height="14" rx="2" fill="#8b5cf6" fill-opacity="0.30" stroke="#7c3aed"/>
+    <text x="260" y="662">End-of-month ability score</text>
+  </g>
+</svg>
